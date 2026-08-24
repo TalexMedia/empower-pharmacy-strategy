@@ -246,6 +246,46 @@ body{background:var(--bg);min-height:100vh}
   body{background:#fff}
   .topbar-cta,.cta-primary{display:none}
 }
+
+/* ── proof-led concept cards ────────────────────────────────────── */
+.scale-label{display:block;font-family:'Oswald',sans-serif;font-size:10px;font-weight:600;
+  letter-spacing:0.14em;text-transform:uppercase;color:var(--o);margin-bottom:6px}
+.prec{margin-top:0.85rem;padding:0.95rem 1rem 0.85rem;border:1px solid var(--border);
+  border-radius:8px;background:var(--bg)}
+.prec-label{font-family:'Oswald',sans-serif;font-size:10px;font-weight:600;letter-spacing:0.12em;
+  text-transform:uppercase;color:var(--txt3);margin-bottom:0.7rem}
+.prec-spec{margin:0 0 0.9rem;display:grid;grid-template-columns:auto 1fr;gap:0.35rem 0.9rem}
+.prec-spec dt{font-family:'Oswald',sans-serif;font-size:10.5px;font-weight:500;letter-spacing:0.07em;
+  text-transform:uppercase;color:var(--txt3);white-space:nowrap;padding-top:2px}
+.prec-spec dd{margin:0;font-size:13px;color:var(--txt2);line-height:1.6}
+.proj-video-embed{position:relative;width:100%;aspect-ratio:16/9;background:#141414;
+  border-radius:8px;overflow:hidden;margin-bottom:0.85rem}
+.proj-video-embed iframe{position:absolute;top:0;left:0;width:100%;height:100%;border:0;display:block}
+.video-facade{cursor:pointer}
+.vf-thumb{position:absolute;top:0;left:0;width:100%;height:100%;object-fit:cover;display:block}
+.vf-play{position:absolute;top:50%;left:50%;transform:translate(-50%,-50%);width:58px;height:40px;
+  border-radius:9px;background:rgba(20,20,20,0.82);display:block}
+.vf-play:after{content:"";position:absolute;top:50%;left:52%;transform:translate(-50%,-50%);
+  border-style:solid;border-width:8px 0 8px 14px;border-color:transparent transparent transparent #fff}
+.video-facade:hover .vf-play{background:var(--o)}
+.vf-title{position:absolute;left:0;right:0;bottom:0;padding:0.5rem 0.7rem;font-size:11px;
+  font-family:'Oswald',sans-serif;letter-spacing:0.05em;text-transform:uppercase;color:#fff;
+  background:linear-gradient(to top,rgba(0,0,0,0.78),rgba(0,0,0,0))}
+.stat-strip-sm{margin:0 0 0.75rem!important}
+.stat-strip-sm .stat-num{font-size:26px}
+.stat-strip-sm .stat-cell{padding:0.65rem 0.5rem}
+.prec-note{margin:0;font-size:12px;color:var(--txt3);line-height:1.65}
+.prec-note a{color:var(--o);text-decoration:none;border-bottom:1px solid rgba(232,90,12,0.35)}
+.apply{margin-top:1rem;padding-left:0.95rem;border-left:2px solid var(--o)}
+.apply-label{font-family:'Oswald',sans-serif;font-size:10px;font-weight:600;letter-spacing:0.12em;
+  text-transform:uppercase;color:var(--o);margin-bottom:0.42rem}
+.apply p{margin:0 0 0.45rem;font-size:13.5px;color:var(--txt2);line-height:1.7}
+.apply p:last-child{margin-bottom:0}
+.apply-names{font-size:12.5px!important;color:var(--txt3)!important}
+.apply-names strong{color:var(--txt);font-weight:500}
+@media(max-width:640px){.prec-spec{grid-template-columns:1fr;gap:0.15rem}
+  .prec-spec dt{padding-top:6px}}
+
 </style>
 </head>
 <body>
@@ -458,7 +498,7 @@ body{background:var(--bg);min-height:100vh}
       <span class="section-eyebrow">Three Concepts For Empower Pharmacy</span>
     </div>
     <h2 class="section-title">Three Opportunities to Grow Your Audience</h2>
-    <p class="section-subtitle">One flagship series you already started, one short taco drama, and one film for the practitioners you serve. We film and produce at every level, so where you start is up to you.</p>
+    <p class="section-subtitle">One flagship documentary series, one shorter format, and one single film. Each one names the format, the show it borrows from, and a company that has already made it work. We film and produce at every level, so where you start is up to you.</p>
   </div>
 
   <div class="ideas-grid">
@@ -466,9 +506,10 @@ body{background:var(--bg);min-height:100vh}
     <div class="idea-card idea-card-featured">
       <div class="idea-num">01</div>
       <div class="idea-body">
-        <div style="display:block;font-family:'Oswald',sans-serif;font-size:10px;font-weight:600;letter-spacing:0.14em;text-transform:uppercase;color:var(--o);margin-bottom:6px">Long-Form Episodic · Flagship, ongoing</div>
-        <div class="idea-title">"The Access Project"</div>
-        <div class="idea-desc">In June, Nelson sat in front of your camera and talked for seventeen minutes about living with HIV and the fight for access to care. Nobody interrupted him. You filmed Krystal and Andrew the same month, and put their stories out under a name of your own: <em>The Access Project</em>.<br/><br/>As a returning documentary series, <em>The Access Project</em> stays with one patient per episode, and that patient tells their own story in their own words. Each 10-15 minute episode then follows the prescription back to the practitioner who wrote it. That practitioner is the guide who explains why this patient needed a medication made for them rather than one off the shelf. At the end of the episode you are inside the Houston facility, watching that prescription get compounded.<br/><br/><em>Diagnosis (the Netflix documentary series that follows one patient with a mystery illness per episode while Dr. Lisa Sanders searches for an answer)</em> made strangers care about one patient at a time. It worked because it stayed with one patient long enough for strangers to care what happened to them. <em>The Access Project</em> gives the patients you serve that same attention. A patient deciding whether to trust a compounded medication sees the practitioner who prescribes one, and the place where it gets made.</div>
+        <div class="scale-label">Long-Form Episodic &middot; Flagship, ongoing</div>
+        <div class="idea-title">A returning documentary series</div>
+        <div class="prec"><div class="prec-label">The format, and a company that has already run it</div><dl class="prec-spec"><dt>Format</dt><dd>Docuseries. One real person per episode, followed long enough that a stranger cares what happens to them.</dd><dt>Entertainment reference</dt><dd><em>Diagnosis</em> (the Netflix documentary series that follows one patient with a mystery illness per episode while Dr. Lisa Sanders searches for an answer)</dd><dt>A company that did it</dt><dd>Cleveland Clinic, <em>A Century of Care</em>. A hospital system put its own patients and caregivers on camera to say what happened to them, made with Courageous Studios, the brand studio inside CNN.</dd><dt>Episode length</dt><dd>38 minutes for the full film, cut down into four shorter chapters</dd></dl><div class="proj-video-embed video-facade" data-yt="SeWEXQHD5ec" role="button" tabindex="0" aria-label="Play video: A Century of Care, Cleveland Clinic"><img class="vf-thumb" src="https://i.ytimg.com/vi/SeWEXQHD5ec/hqdefault.jpg" alt="" onerror="this.style.display='none'"><span class="vf-play" aria-hidden="true"></span><span class="vf-title">A Century of Care &middot; Cleveland Clinic</span></div><div class="stat-strip stat-strip-sm"><div class="stat-cell"><div class="stat-num">79,287</div><div class="stat-label">Views On The Film</div></div><div class="stat-cell"><div class="stat-num">HLN, CNN, Hulu</div><div class="stat-label">Where It Ran</div></div><div class="stat-cell"><div class="stat-num">2022</div><div class="stat-label">NYX Awards Grand Winner</div></div></div><p class="prec-note">Each chapter takes one element of care and shows what it changes for a patient. Runtime and view count read from YouTube on 24 August 2026. <a href="https://www.youtube.com/playlist?list=PLMG0zKOgNqNl7rwF1XUggRn7IOr9v7ejJ" target="_blank" rel="noopener">Watch the series</a></p></div>
+        <div class="apply"><div class="apply-label">How Empower Pharmacy could use it</div><p>You have already filmed three patients and given the series a name, The Access Project. The same format, carried on, stays with one patient an episode, in their own words. Each episode then follows the prescription back to the practitioner who wrote it and onto the Houston floor where it gets compounded.</p><p class="apply-names">Possible names: <strong>The Access Project</strong>, <strong>One Prescription</strong>, <strong>Made For One Person</strong></p></div>
         <div class="why-block">
           <div class="why-label">Why long-form episodic wins over time</div>
           <div class="why-list">
@@ -483,9 +524,10 @@ body{background:var(--bg);min-height:100vh}
     <div class="idea-card">
       <div class="idea-num">02</div>
       <div class="idea-body">
-        <div style="display:block;font-family:'Oswald',sans-serif;font-size:10px;font-weight:600;letter-spacing:0.14em;text-transform:uppercase;color:var(--o);margin-bottom:6px">Short-Form Episodic · The Taco Drama</div>
-        <div class="idea-title">"Outbound"</div>
-        <div class="idea-desc">It is 3:40 on a Thursday afternoon in the shipping office, and the last carrier pickup leaves at five. A storm has just closed the sorting hub that half of tomorrow's boxes fly through. The backup route adds a day, the phones have started ringing, and in this office the weather three states away is everyone's problem.<br/><br/>A <em>'Taco Drama'</em> is a short scripted series designed to be easy to consume on the go. <em>Outbound</em> is a workplace comedy set in the shipping office of a compounding pharmacy, one logistics problem per episode, at the worst possible time. Episodes run a minute or two, shot vertical for phones and widescreen for YouTube and your website. A company licensed to ship nationwide, including Puerto Rico, knows this office never runs out of material.<br/><br/>The office runs on four people at four desks. Lorraine has managed the dock for years and treats the five o'clock pickup as a deadline that cannot move. Hector owns the cold packs and the freezer, and he dresses for the freezer even in a Houston August. Mei knows the shipping rule for every state and for Puerto Rico, and she will recite the relevant one whether or not you asked. And Danny works the phones with the carriers, calm and kind, with a headset held together by tape. Every week something outside the building goes wrong. A hub goes down, a state holiday closes a route, or a highway shuts between the facility and the airport. The four of them redraw the routes until every box makes the truck.<br/><br/><em>Abbott Elementary (the comedy set in a Philadelphia public school)</em> proved a workplace show can love the work while it laughs at the workday. And <em>Superstore (the sitcom where a store's staff face one absurd situation a week and everything resets by the next episode)</em> proved that a workplace with problems walking in the door is a comedy engine that never runs out. A shipping coordinator anywhere gets a laugh at a scramble she has lived. Everyone else gets a look at the office that moves medication from Houston to doorsteps across the country.</div>
+        <div class="scale-label">Short-Form Episodic &middot; Scripted comedy, under 2 minutes</div>
+        <div class="idea-title">A short scripted comedy</div>
+        <div class="prec"><div class="prec-label">The format, and a company that has already run it</div><dl class="prec-spec"><dt>Format</dt><dd>Sitcom. A fixed cast in one workplace, one problem an episode, resolved by the end of it. A 'Taco Drama' is a short scripted series designed to be easy to consume on the go.</dd><dt>Entertainment reference</dt><dd><em>Abbott Elementary</em> (the comedy set in a Philadelphia public school) and <em>Superstore</em> (the sitcom where a store's staff face one absurd situation a week and everything resets by the next episode)</dd><dt>A company that did it</dt><dd>Albertsons with Procter &amp; Gamble, <em>Rico's Tacos</em>. A scripted series written for a phone screen and for the display above the checkout, running on channels the company owns.</dd><dt>Episode length</dt><dd>1 minute 10 seconds for the first episode</dd></dl><div class="proj-video-embed video-facade" data-yt="PeUsXJ4ccXY" role="button" tabindex="0" aria-label="Play video: Rico's Tacos Episode 1, Flavor Has a Price"><img class="vf-thumb" src="https://i.ytimg.com/vi/PeUsXJ4ccXY/hqdefault.jpg" alt="" onerror="this.style.display='none'"><span class="vf-play" aria-hidden="true"></span><span class="vf-title">Episode 1, Flavor Has a Price &middot; Rico's Tacos</span></div><div class="stat-strip stat-strip-sm"><div class="stat-cell"><div class="stat-num">200,363</div><div class="stat-label">Views, Episode One</div></div><div class="stat-cell"><div class="stat-num">940K</div><div class="stat-label">Views, All Episodes</div></div><div class="stat-cell"><div class="stat-num">17 of 22</div><div class="stat-label">Episodes Out So Far</div></div></div><p class="prec-note">Albertsons runs it on YouTube, on social, and on the screens inside its stores, and the app lets you buy what you just watched. For a longer-form comparison, the accounting software company FloQast makes <em>PBC</em>, a scripted workplace comedy about auditors whose first episode runs 22 minutes and has 213,014 views. Counts read from YouTube on 24 August 2026. <a href="https://www.youtube.com/watch?v=PeUsXJ4ccXY" target="_blank" rel="noopener">Rico's Tacos</a> &middot; <a href="https://www.youtube.com/playlist?list=PLp0NhJVOmekheBEcUibmqdlj0RIT2J4vr" target="_blank" rel="noopener">FloQast PBC</a></p></div>
+        <div class="apply"><div class="apply-label">How Empower Pharmacy could use it</div><p>The same format runs in your shipping office with four people at four desks. One logistics problem arrives each episode at the worst possible time, and every disruption comes from outside the building. Nothing in the show touches a patient, a prescriber, a dose, or the medicine.</p><p class="apply-names">Possible names: <strong>Outbound</strong>, <strong>The Five O'Clock</strong>, <strong>Cold Chain</strong></p></div>
         <div class="why-block">
           <div class="why-label">Why short-form drama is worth the bet</div>
           <div class="why-list">
@@ -500,9 +542,10 @@ body{background:var(--bg);min-height:100vh}
     <div class="idea-card">
       <div class="idea-num">03</div>
       <div class="idea-body">
-        <div style="display:block;font-family:'Oswald',sans-serif;font-size:10px;font-weight:600;letter-spacing:0.14em;text-transform:uppercase;color:var(--o);margin-bottom:6px">A Single Film · one-time</div>
-        <div class="idea-title">"What Happens After Submit"</div>
-        <div class="idea-desc">A practitioner finishes an appointment, opens the portal, and sends a prescription to Houston. From her side of the screen the whole event is a form and a confirmation page. A few days later a box arrives at her patient's door, and everything in between happened inside a building she has probably never seen.<br/><br/><em>What Happens After Submit</em> is a single film made for the practitioners who prescribe through you. The camera follows one order across the 86,000-square-foot facility you opened in Houston. You see the qualified raw materials and the controlled cleanroom where that formula gets compounded. Then comes the Quality Unit that tests the batch and approves it, and the Certificate of Analysis that goes with it. At the end of the line there is a label with one person's name on it. Your pharmacists and technicians are the cast, each one on camera at the step they own. The finished film goes in the Practitioners section of your site, alongside Getting Started and Licensure &amp; Shipping Coverage.<br/><br/>A practitioner who has only ever seen the order form and the tracking number gets to watch everything that happens in between.</div>
+        <div class="scale-label">A Single Film &middot; one-time</div>
+        <div class="idea-title">One film that answers one question</div>
+        <div class="prec"><div class="prec-label">The format, and a company that has already run it</div><dl class="prec-spec"><dt>Format</dt><dd>Explainer. One honest question, answered by opening the doors and filming the work.</dd><dt>Entertainment reference</dt><dd><em>How It's Made</em> (the series that follows a single product along the line from raw material to finished item)</dd><dt>A company that did it</dt><dd>McDonald's, <em>Our Food. Your Questions.</em> The company took the questions people were actually asking about its food, including the hostile ones, and answered them by filming inside its own plants.</dd><dt>Episode length</dt><dd>2 minutes 44 seconds for the most watched answer</dd></dl><div class="proj-video-embed video-facade" data-yt="Ua5PaSqKD6k" role="button" tabindex="0" aria-label="Play video: Pink goop in Chicken McNuggets, McDonald's Canada answers"><img class="vf-thumb" src="https://i.ytimg.com/vi/Ua5PaSqKD6k/hqdefault.jpg" alt="" onerror="this.style.display='none'"><span class="vf-play" aria-hidden="true"></span><span class="vf-title">Pink goop in Chicken McNuggets? &middot; McDonald's</span></div><div class="stat-strip stat-strip-sm"><div class="stat-cell"><div class="stat-num">5.85M</div><div class="stat-label">Views, Top Answer</div></div><div class="stat-cell"><div class="stat-num">3.51M</div><div class="stat-label">Views, The Beef Film</div></div><div class="stat-cell"><div class="stat-num">Own Plants</div><div class="stat-label">Where It Was Filmed</div></div></div><p class="prec-note">The most watched film in the series answers whether Chicken McNuggets are made from pink goop by walking through the plant that makes them. Runtime and counts read from YouTube on 24 August 2026. <a href="https://www.youtube.com/playlist?list=PLB8F066AFA8915464" target="_blank" rel="noopener">Watch the series</a></p></div>
+        <div class="apply"><div class="apply-label">How Empower Pharmacy could use it</div><p>One order is filmed across your 86,000 square foot Houston facility. The camera follows the qualified raw materials into the cleanroom, past the Quality Unit that tests the batch, and onto the label with one person's name on it. The film answers the question a practitioner has after they hit submit: what happens to the order next.</p><p class="apply-names">Possible names: <strong>What Happens After Submit</strong>, <strong>One Order</strong>, <strong>From Submit To Doorstep</strong></p></div>
         <div class="why-block">
           <div class="why-label">Why one film is worth making on its own</div>
           <div class="why-list">
@@ -737,9 +780,31 @@ window.addEventListener("load", function(){
 </script>
 
 
+
+<script>
+(function(){
+  function load(el){
+    if(el.getAttribute("data-loaded")) return;
+    var id = el.getAttribute("data-yt");
+    var f = document.createElement("iframe");
+    f.setAttribute("src","https://www.youtube-nocookie.com/embed/"+id+"?autoplay=1&rel=0");
+    f.setAttribute("title","Video player");
+    f.setAttribute("allow","accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture");
+    f.setAttribute("allowfullscreen","");
+    el.innerHTML = ""; el.appendChild(f); el.setAttribute("data-loaded","1");
+  }
+  document.querySelectorAll(".video-facade").forEach(function(el){
+    el.addEventListener("click", function(){ load(el); });
+    el.addEventListener("keydown", function(ev){
+      if(ev.key === "Enter" || ev.key === " "){ ev.preventDefault(); load(el); }
+    });
+  });
+})();
+</script>
+
 <script id="tm-live-loader">
 (function(){
-  var DB = 'https://talex-media-default-rtdb.firebaseio.com', KEY = 'empower-pharmacy-3cb78b22', BAKED = '';
+  var DB = 'https://talex-media-default-rtdb.firebaseio.com', KEY = 'empower-pharmacy-v2-1df454f3', BAKED = '';
   var wrap = document.querySelector('#wrap');
   if(!wrap || !window.fetch) return;
   fetch(DB + '/published/' + KEY + '.json', {cache: 'no-store'})
